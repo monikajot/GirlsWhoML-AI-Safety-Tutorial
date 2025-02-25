@@ -156,7 +156,7 @@ Another example, create a set of dangerous/corrupted functions and ask model to 
 
 Want to dive even deeper?
 
-Go through the [Agent Basics docs ](https://inspect.ai-safety-institute.org.uk/agents.html)and run the following agentic evaluation and observe the logs to understand how it works.
+Go through the [Agent Basics docs ](https://inspect.ai-safety-institute.org.uk/agents.html) and run the agentic evaluation in `task_4.py` and observe the logs to understand how it works.
 
 Questions:
 1. Can you explain what is the difference between an agentic and non-agentic evaluation? What makes an evaluation *agentic*?
