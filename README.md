@@ -12,7 +12,6 @@ pip install inspect-ai
 
 pip install openai
 export OPENAI_API_KEY=your-openai-api-key
-inspect eval arc.py --model openai/gpt-4o
 ```
 
 
