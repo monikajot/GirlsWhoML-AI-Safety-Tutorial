@@ -73,7 +73,7 @@ For example, in `theory_of_mind` task we call `model_graded_fact` which uses ano
 Goal: we will follow a simple example from [Inspect docs](https://inspect.ai-safety-institute.org.uk/) and explain how everything comes together. Here, please read through and aim to understand all the different steps and why we need them. If you get stuck, refer to the docs or ask for help.
 
 1. Go to task_1.py, fill in the missing code and run the evaluation.
-2. Then run `Inspect view` on your terminal and explore the logs.
+2. Then run `inspect view` on your terminal and explore the logs.
 
 ### Task 2
 
