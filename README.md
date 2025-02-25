@@ -96,7 +96,29 @@ However, to see how to create a solver, we will create one which adds a system p
 Note: you'll need to read the dataset from the `us_foreign_policy_test.csv` file
 
 <details>
-<summary>Hints for this task</summary>
+<summary>Hints</summary>
+
+
+<details>
+<summary>Use multiple scorer</summary>
+
+```
+@scorer(metrics={"matching_words": [mean(), stderr()], "accuracy": [mean(), stderr()]})
+def my_custom_scorer():
+    async def score(state: TaskState, target: Target):
+        # Compare state / model output with target
+        # to yield a score
+        answer = state.output.completion
+        question = state.input
+
+        # TODO: calculate metric values
+
+        return Score(value={"matching_words": score_val, "accuracy": acc}, explanation=state.output.completion)
+
+    return score
+```
+</details>
+
 </details>
 
 Start by setting the arguments for the three main components - dataset, solver, scorer.
